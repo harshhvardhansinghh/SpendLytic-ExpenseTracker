@@ -32,14 +32,14 @@ public class CategoryController {
     }
 
     @PostMapping("/new")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<ApiResponseDto<?>> addNewCategory(@RequestBody @Valid CategoryRequestDto categoryRequestDto)
             throws CategoryServiceLogicException, TransactionTypeNotFoundException, CategoryAlreadyExistsException {
         return categoryService.addNewCategory(categoryRequestDto);
     }
 
     @PutMapping("/update")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<ApiResponseDto<?>> updateCategory(@Param ("categoryId") int categoryId,
                                                             @RequestBody @Valid CategoryRequestDto categoryRequestDto)
             throws CategoryServiceLogicException, CategoryNotFoundException, TransactionTypeNotFoundException {
@@ -47,7 +47,7 @@ public class CategoryController {
     }
 
     @DeleteMapping("/delete")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<ApiResponseDto<?>> disableOrEnableCategory(@Param ("categoryId") int categoryId)
             throws CategoryServiceLogicException, CategoryNotFoundException {
         return categoryService.enableOrDisableCategory(categoryId);

@@ -58,6 +58,7 @@ public class WebSecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers("/mywallet/auth/**").permitAll()
+                                .requestMatchers("/mywallet/ai/**").permitAll()
                                 .requestMatchers("/mywallet/transactiontype/**").permitAll()
                                 .requestMatchers("/mywallet/category/**").permitAll()
                                 .requestMatchers("/mywallet/transaction/**").permitAll()

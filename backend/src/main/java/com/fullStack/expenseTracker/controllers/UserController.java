@@ -29,7 +29,7 @@ public class UserController {
     private AuthService authService;
 
     @GetMapping("/getAll")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<ApiResponseDto<?>> getAllUsers(@Param("pageNumber") int pageNumber,
                                                          @Param("pageSize") int pageSize,
                                                          @Param("searchKey") String searchKey)
@@ -38,14 +38,14 @@ public class UserController {
     }
 
     @DeleteMapping("/disable")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<ApiResponseDto<?>> disableUser(@Param("userId") long userId)
             throws UserNotFoundException, UserServiceLogicException {
         return userService.enableOrDisableUser(userId);
     }
 
     @PutMapping("/enable")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<ApiResponseDto<?>> enableUser(@Param("userId") long userId)
             throws UserNotFoundException, UserServiceLogicException {
         return userService.enableOrDisableUser(userId);
