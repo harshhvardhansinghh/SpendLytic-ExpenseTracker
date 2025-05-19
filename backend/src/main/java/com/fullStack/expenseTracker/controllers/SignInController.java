@@ -29,7 +29,7 @@ import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/mywallet/auth")
+@RequestMapping("/spendlytic/auth")
 public class SignInController {
     @Autowired
     private AuthenticationManager authenticationManager;

@@ -9,7 +9,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/mywallet/ai")
+@RequestMapping("/spendlytic/ai")
 @RequiredArgsConstructor
 @CrossOrigin(origins = "http://localhost:3000")
 public class BudgetAdviceController {

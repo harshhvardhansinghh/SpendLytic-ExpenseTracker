@@ -18,7 +18,7 @@ import java.io.UnsupportedEncodingException;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/mywallet/auth")
+@RequestMapping("/spendlytic/auth")
 public class SignUpController {
     @Autowired
     private AuthService authService;

@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/mywallet/transaction")
+@RequestMapping("/spendlytic/transaction")
 public class TransactionController {
 
     @Autowired
     TransactionService transactionService;
 
     @GetMapping("/getAll")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<ApiResponseDto<?>> getAllTransactions(@Param("pageNumber") int pageNumber,
                                                          @Param("pageSize") int pageSize,
                                                          @Param("searchKey") String searchKey) throws TransactionServiceLogicException {

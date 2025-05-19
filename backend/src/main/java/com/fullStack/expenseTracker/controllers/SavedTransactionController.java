@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/mywallet/saved")
+@RequestMapping("/spendlytic/saved")
 public class SavedTransactionController {
 
     @Autowired

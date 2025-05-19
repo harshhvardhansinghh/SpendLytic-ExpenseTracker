@@ -57,12 +57,12 @@ public class WebSecurityConfig {
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/mywallet/auth/**").permitAll()
-                                .requestMatchers("/mywallet/ai/**").permitAll()
-                                .requestMatchers("/mywallet/transactiontype/**").permitAll()
-                                .requestMatchers("/mywallet/category/**").permitAll()
-                                .requestMatchers("/mywallet/transaction/**").permitAll()
-                                .requestMatchers("/mywallet/user/**").permitAll()
+                        auth.requestMatchers("/spendlytic/auth/**").permitAll()
+                                .requestMatchers("/spendlytic/ai/**").permitAll()
+                                .requestMatchers("/spendlytic/transactiontype/**").permitAll()
+                                .requestMatchers("/spendlytic/category/**").permitAll()
+                                .requestMatchers("/spendlytic/transaction/**").permitAll()
+                                .requestMatchers("/spendlytic/user/**").permitAll()
                                 .anyRequest().authenticated()
                 );
 

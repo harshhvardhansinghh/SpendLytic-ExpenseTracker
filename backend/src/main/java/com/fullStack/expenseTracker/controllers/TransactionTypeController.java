@@ -13,7 +13,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/mywallet/transactiontype")
+@RequestMapping("/spendlytic/transactiontype")
 public class TransactionTypeController {
 
     @Autowired
