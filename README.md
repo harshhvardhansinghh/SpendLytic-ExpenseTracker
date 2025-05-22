@@ -12,7 +12,6 @@ SpendLytic is a smart expense tracker with a built-in budgeting assistant powere
 - 🔐 **JWT-Based Authentication** – Secure login and user sessions
 - 📆 **Recurring Transactions** – Manage subscriptions and auto-expenses
 - 📦 **RESTful APIs** – Modular and extensible backend
-- ☁️ **Cloud Deployment** – Hosted on AWS EKS with CI/CD (Jenkins)
 
 ---
 
