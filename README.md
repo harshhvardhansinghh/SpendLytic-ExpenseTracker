@@ -111,12 +111,6 @@ Add screenshots of:
 ![image](https://github.com/user-attachments/assets/2b20eb2d-6ecb-46ab-a325-52472f3b9a91)
 
 
-
-
-- 🖥️ **Dashboard View** – Summary of budgets, transactions, and trends  
-- 🧠 **AI Budgeting Advice Screen** – LLaMA3-generated personalized insights  
-- 📊 **Expense Log & Analytics View** – Category-wise spending and history
-
 ---
 
 
