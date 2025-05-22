@@ -26,7 +26,7 @@ SpendLytic is a smart expense tracker with a built-in budgeting assistant powere
 | Containerization| Docker                             |
 | Orchestration  | Kubernetes (EKS)                    |
 | CI/CD          | Jenkins                             |
-| Frontend (Optional) | React or Thymeleaf              |
+| Frontend       | React                               |
 
 ---
 
